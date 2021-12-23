@@ -1,13 +1,11 @@
 pipeline {
-  agent {label 'linux'}
+  agent any
 
   stages {
     stage('Hello') {
       steps {
         sh '''
-          ansible --version
-          ansible-playbook --version
-          ansible-galaxy --version
+          ls -al
         '''
       }
     }

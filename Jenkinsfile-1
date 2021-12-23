@@ -6,6 +6,7 @@ pipeline {
       steps {
         sh '''
           ls -al
+          echo "Hello World"
         '''
       }
     }
